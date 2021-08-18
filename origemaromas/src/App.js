@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Api from './Api'
 import ProductGrid from './components/ProductGrid'
+import './App.css'
 
 export default () => {
 

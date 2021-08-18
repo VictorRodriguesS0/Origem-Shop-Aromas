@@ -1,10 +1,8 @@
-const API_BASE = 'https://fakestoreapi.com';
-//  https://fakestoreapi.com/products
-
+const API_BASE = 'https://sheet.best/api/sheets/ac6e80c7-3b3d-4349-92aa-ff5ebf796902';
 
 // pega o endpoint e coloca num json
 const basicFetch = async (endpoint) => {
-    const req = await fetch(`${API_BASE}${endpoint}`);
+    const req = await fetch(`${API_BASE}`);
     const json = await req.json();
     return json
 }
@@ -15,8 +13,8 @@ export default {
             {
                 slug: 'todos-os-produtos',
                 title: 'Todos os Produtos',
-                items: await basicFetch(`/products`) // concatena com APIKEY se tiver na API
-            }
+                items: await basicFetch() // concatena com APIKEY se tiver na API
+            },
         ];
     }
 }

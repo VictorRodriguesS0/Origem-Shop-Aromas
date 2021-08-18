@@ -1,0 +1,23 @@
+.productGrid {
+    margin-bottom: 30px;
+}
+.productGrid h2 {
+    margin: 0px 0px 0px 30px;
+}
+.productGrid--area {
+    width: 1000px;
+    padding-left: 30px;
+}
+.productGrid--item {
+    display: inline-block;
+    width: 290px;
+    height: 335px;
+}
+.productGrid--item img {
+    width: 100%;
+    height: 100%;
+    transform: scale(0.7)
+}
+.productGrid--item img:hover {
+    transform: scale(1);
+}
